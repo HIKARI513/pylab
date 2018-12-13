@@ -23,3 +23,9 @@
 **文档：**
 
 - [NumPy](https://docs.scipy.org/doc/numpy-1.15.0/user/quickstart.html): [numpy_tutorial.ipynb](./tutorial/numpy_tutirial.ipnb)
+
+**翻译：**好的文档值得翻译学习
+
+- 2018-12：
+    - 原文：[How to Create a Simple Neural Network in Python](https://www.kdnuggets.com/2018/10/simple-neural-network-python.html)
+    - 翻译实践：[2018_12_13_simple_neural_network_python](./docs/2018_12_13_simple_neural_network_python.ipynb)
