@@ -20,6 +20,10 @@
 
 **课程：**
 
+- [专为程序员设计的线性代数课程](https://coding.imooc.com/class/260.html)：bobo老师的课程
+    - 代码目录：[play_linear_algebra](./pylab/play_linear_algebra)
+    - 官方代码：[Play-with-Linear-Algebra](https://github.com/liuyubobobo/Play-with-Linear-Algebra)
+
 **文档：**
 
 - [NumPy](https://docs.scipy.org/doc/numpy-1.15.0/user/quickstart.html): [numpy_tutorial.ipynb](./tutorial/numpy_tutirial.ipnb)
