@@ -70,7 +70,7 @@
 > 好的文章以及文档翻译
 
 - [TensorFlow-Example](https://github.com/aymericdamien/TensorFlow-Examples):
-    - [TensorFlow-Examples翻译版](./tutorial/TensorFlow-Examples)
+    - [TensorFlow-Examples翻译版](./pylab/tutorial/TensorFlow-Examples)
 
 - 2018-12-13：
     - 原文：[How to Create a Simple Neural Network in Python](https://www.kdnuggets.com/2018/10/simple-neural-network-python.html)
