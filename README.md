@@ -21,6 +21,7 @@
 
 - 版本：Python3.6
 - 环境管理：pipenv
+- 笔记本：Jupyter
 
 ### 书籍
 
