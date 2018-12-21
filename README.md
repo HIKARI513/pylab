@@ -65,6 +65,7 @@
 > 框架以及库的学习汇总
 
 - [NumPy](https://docs.scipy.org/doc/numpy-1.15.0/user/quickstart.html): [numpy_tutorial.ipynb](./tutorial/numpy/numpy_tutirial.ipnb)
+- [Python Tricks](./pylab/python_tricks): 个人收集的一些 Python 编码技巧，有兴趣可订阅公众号：[老胡的储物柜](https://ws1.sinaimg.cn/large/007i3XCUgy1fyamp8ip6cj309k09kdfs.jpg)
 
 ### 翻译
 
