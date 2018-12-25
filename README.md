@@ -51,6 +51,7 @@
 
 ### 论文
 
+ - Character-level Convolutional Networks for Text Classification: [阅读笔记](./pylab/papers/character_level_convolutional_networks_for_text_classiﬁcation)
 
 ### 课程
 
