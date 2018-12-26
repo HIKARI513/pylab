@@ -8,3 +8,5 @@ Python是一个自由度很高的动态语言，这里是个人收集的一些 P
 - [列表展开](python_tricks02.py)
 - [多个界定符分割字符串](python_tricks03.py)
 - [过滤序列元素](python_tricks04.py)
+- [*args 的⽤法](python_tricks05.py)
+- [**kwargs 的⽤法](python_tricks06.py)
