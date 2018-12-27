@@ -115,7 +115,7 @@ if __name__ == '__main__':
     train_data_ins.shuffle_data()
 
     batch_indices, classes = train_data_ins.get_batch_to_indices()
-    print(classes)
+    print(batch_indices)
 
     exit()
     with open("test.vec", "w") as fo:

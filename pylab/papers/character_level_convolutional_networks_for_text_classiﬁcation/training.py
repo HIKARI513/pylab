@@ -103,7 +103,6 @@ if __name__ == '__main__':
                      char_cnn.loss,
                      char_cnn.accuracy],
                     feed_dict)
-
                 time_str = datetime.datetime.now().isoformat()
                 print("{}: step {}, loss {:g}, acc {:g}".format(time_str, step, loss, accuracy))
                 train_summary_writer.add_summary(summaries, step)

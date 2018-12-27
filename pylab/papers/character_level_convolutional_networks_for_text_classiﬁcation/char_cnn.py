@@ -33,12 +33,13 @@ class CharConvNet(object):
 
         with tf.name_scope("Embedding-Layer"), tf.device('/cpu:0'):
             # Quantization layer
-
             Q = tf.concat(
                 [
-                    tf.zeros([1, alphabet_size]),  # Zero padding vector for out of alphabet characters
-                    tf.one_hot(list(range(alphabet_size)), alphabet_size, 1.0, 0.0)
+                    # # Zero padding vector for out of alphabet characters
+                    tf.zeros([1, alphabet_size]),
                     # one-hot vector representation for alphabets
+                    tf.one_hot(list(range(alphabet_size)), alphabet_size, 1.0, 0.0)
+
                 ],
                 0,
                 name='Q')
@@ -68,7 +69,7 @@ class CharConvNet(object):
                 conv = tf.nn.conv2d(x, W, [1, 1, 1, 1], "VALID", name='Conv')
                 x = tf.nn.bias_add(conv, b)
 
-                # Threshold
+            # Threshold
             with tf.name_scope("ThresholdLayer"):
                 x = tf.where(tf.less(x, th), tf.zeros_like(x), x)
 
@@ -76,17 +77,19 @@ class CharConvNet(object):
                 with tf.name_scope("MaxPoolingLayer"):
                     # Maxpooling over the outputs
                     pool = tf.nn.max_pool(x, ksize=[1, cl[-1], 1, 1], strides=[1, cl[-1], 1, 1], padding='VALID')
-                    x = tf.transpose(pool, [0, 1, 3, 2])  # [batch_size, img_width, img_height, 1]
+                    # [batch_size, img_width, img_height, 1]
+                    x = tf.transpose(pool, [0, 1, 3, 2])
             else:
-                x = tf.transpose(x, [0, 1, 3, 2], name='tr%d' % var_id)  # [batch_size, img_width, img_height, 1]
+                # [batch_size, img_width, img_height, 1]
+                x = tf.transpose(x, [0, 1, 3, 2], name='tr%d' % var_id)
 
         with tf.name_scope("ReshapeLayer"):
             # Reshape layer
             vec_dim = x.get_shape()[1].value * x.get_shape()[2].value
-
             x = tf.reshape(x, [-1, vec_dim])
 
-        weights = [vec_dim] + list(fully_layers)  # The connection from reshape layer to fully connected layers
+        # The connection from reshape layer to fully connected layers
+        weights = [vec_dim] + list(fully_layers)
 
         for i, fl in enumerate(fully_layers):
             var_id += 1

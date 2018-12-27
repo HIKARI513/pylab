@@ -10,3 +10,4 @@ Python是一个自由度很高的动态语言，这里是个人收集的一些 P
 - [过滤序列元素](python_tricks04.py)
 - [*args 的⽤法](python_tricks05.py)
 - [**kwargs 的⽤法](python_tricks06.py)
+- [0.1 + 0.2 = ?](python_tricks07.py)
