@@ -1,3 +1,5 @@
+# 读 - Character-level Convolutional Networks for Text Classiﬁcation
+
 > 这篇论文提供了一个关于字符级卷积网络(`ConvNets`)在文本分类中应用实证研究，我们构建了几个大型数据集，以表明字符级卷积网络可以实现最先进的或竞争性的结果，针对传统模型（如词袋，n-gram及其TFIDF变体）和深度学习模型（如基于单词的ConvNets和循环神经网络）进行比较
 
 ## Introduction
@@ -140,3 +142,5 @@ abcdefghijklmnopqrstuvwxyz0123456789-,;.!?:'\"/\\|_@#$%^&*~`+-=<>()[]{}
 - [GitHub - gaussic/text-classification-cnn-rnn: CNN-RNN中文文本分类，基于TensorFlow](https://github.com/gaussic/text-classification-cnn-rnn)
 
 我参考上面的代码实现在[character_level_convolutional_networks_for_text_classiﬁcation](https://github.com/howie6879/pylab/tree/master/pylab/papers/character_level_convolutional_networks_for_text_classi%EF%AC%81cation)
+
+![](https://ws1.sinaimg.cn/large/007i3XCUgy1fyjvmwzoq2j30p00dwmzl.jpg)
