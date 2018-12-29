@@ -21,7 +21,7 @@
 
 - 版本：Python3.6
 - 环境管理：pipenv
-- 笔记本：Jupyter
+- 笔记本：Jupyter Lab
 
 ### 书籍
 
@@ -29,7 +29,7 @@
 
 - 2018-09 ~ 未知:
     - 书名：统计学习方法
-    - 实验代码: 见 [pylab/statistical_learning_method](./pylab/statistical_learning_method)
+    - 实验代码: 见 [pylab/books/statistical_learning_method](pylab/books/statistical_learning_method)
     - 笔记记录：
         - 第一章：[统计学习方法概论](https://www.howie6879.cn/post/37/)
         - 第二章：[感知机](https://www.howie6879.cn/post/38/)
@@ -38,14 +38,14 @@
 - 2018-12 ~ 未知：
     - 书名：[Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
     - 中文版：[Neural Networks and Deep Learning](https://github.com/zhanggyb/nndl)
-    - 实验代码: 见 [pylab/nndl](./pylab/nndl)
+    - 实验代码: 见 [pylab/nndl](pylab/books/nndl)
     - 官方：见 [nndl](https://github.com/mnielsen/neural-networks-and-deep-learning)
     - 笔记记录：
         - 第一章：[神经网络与深度学习笔记 - 1.识别手写字](https://www.howie6879.cn/post/33/)
 
 - 2018-12-10 ~ 未知:
     - 书名: [hands_on_Ml_with_Sklearn_and_TF](https://github.com/apachecn/hands_on_Ml_with_Sklearn_and_TF)
-    - 实验代码: 见 [pylab/hands_on_ml_with_sklearn_and_tf](./pylab/hands_on_ml_with_sklearn_and_tf)
+    - 实验代码: 见 [pylab/hands_on_ml_with_sklearn_and_tf](pylab/books/hands_on_ml_with_sklearn_and_tf)
     - 官方：[源码仓库](https://github.com/ageron/handson-ml)
     - 第三方笔记：[Hands-on-Machine-Learning](https://github.com/DeqianBai/Hands-on-Machine-Learning)
 

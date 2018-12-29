@@ -25,6 +25,7 @@ if __name__ == '__main__':
 
     # 每次迭代数据
     num_batches_per_epoch = int(train_data.get_length() / config.batch_size) + 1
+
     num_batch_dev = dev_data.get_length()
 
     print("Training ===>")

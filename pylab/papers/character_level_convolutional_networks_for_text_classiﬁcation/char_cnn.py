@@ -54,8 +54,9 @@ class CharConvNet(object):
         for i, cl in enumerate(conv_layers):
             var_id += 1
             with tf.name_scope("ConvolutionLayer"):
+                # 69
                 filter_width = x.get_shape()[2].value
-                # # Perform 1D conv with [kw, inputFrameSize (i.e alphabet_size), outputFrameSize]
+                # 第一层 [256, 7, 3] 结果为 [7, 69, 1, 256]
                 filter_shape = [cl[1], filter_width, 1, cl[0]]
                 # Convolution layer
                 stdv = 1 / sqrt(cl[0] * cl[1])

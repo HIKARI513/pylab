@@ -12,3 +12,5 @@ Python是一个自由度很高的动态语言，这里是个人收集的一些 P
 - [**kwargs 的⽤法](python_tricks06.py)
 - [0.1 + 0.2 = ?](python_tricks07.py)
 - [删除字符串中不需要的字符](python_tricks08.py)
+- [Python 之禅](python_tricks09.py)
+- [多判断的多种写法](python_tricks10.py)
