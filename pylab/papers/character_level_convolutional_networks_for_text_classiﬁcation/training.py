@@ -37,12 +37,14 @@ if __name__ == '__main__':
 
         with sess.as_default():
 
-            char_cnn = CharConvNet(conv_layers=config.model.conv_layers,
-                                   fully_layers=config.model.fully_connected_layers,
-                                   input_size=config.input_size,
-                                   alphabet_size=config.alphabet_size,
-                                   num_of_classes=config.num_of_classes,
-                                   th=config.model.th)
+            char_cnn = CharConvNet(
+                conv_layers=config.model.conv_layers,
+                fully_layers=config.model.fully_connected_layers,
+                input_size=config.input_size,
+                alphabet_size=config.alphabet_size,
+                num_of_classes=config.num_of_classes,
+                th=config.model.th
+            )
 
             global_step = tf.Variable(0, trainable=False)
             learning_rate = 0.001

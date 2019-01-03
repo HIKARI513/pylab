@@ -49,6 +49,11 @@
     - 官方：[源码仓库](https://github.com/ageron/handson-ml)
     - 第三方笔记：[Hands-on-Machine-Learning](https://github.com/DeqianBai/Hands-on-Machine-Learning)
 
+- 2019-01 ~ 未知:
+    - 书名: Deep Learning with Python
+    - 实验代码: 见 [pylab/books/deep_learning_with_python](pylab/books/deep_learning_with_python)
+  
+
 ### 论文
 
  - Character-level Convolutional Networks for Text Classification: [阅读笔记](./pylab/papers/character_level_convolutional_networks_for_text_classiﬁcation)
