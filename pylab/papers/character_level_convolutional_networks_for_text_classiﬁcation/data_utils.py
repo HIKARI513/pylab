@@ -30,9 +30,9 @@ class DataUtils(object):
         self.num_of_classes = num_of_classes
 
         # 将每个字符映射成int
-        self.dict = {}
+        self.char_dict = {}
         for idx, char in enumerate(self.alphabet):
-            self.dict[char] = idx + 1
+            self.char_dict[char] = idx + 1
 
     def get_batch_to_indices(self, batch_num=0):
         """
@@ -95,7 +95,7 @@ class DataUtils(object):
         :param s: 即将转化的字符
         :return: numpy.ndarray 长度为：self.length
         """
-        # 论文中表明 不用区分大小写
+        # 论文中表明 对于比较大的数据可以考虑不用区分大小写
         s = s.lower()
         # 最大长度不超过 input_size 此处为 1014
         max_length = min(len(s), self.length)
@@ -104,8 +104,8 @@ class DataUtils(object):
         for i in range(1, max_length + 1):
             # 逆序映射
             c = s[-i]
-            if c in self.dict:
-                str2idx[i - 1] = self.dict[c]
+            if c in self.char_dict:
+                str2idx[i - 1] = self.char_dict[c]
         return str2idx
 
 
