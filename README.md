@@ -52,12 +52,15 @@
 - 2019-01 ~ 未知:
     - 书名: Deep Learning with Python
     - 实验代码: 见 [pylab/books/deep_learning_with_python](pylab/books/deep_learning_with_python)
-  
+
+- 2019-01 ~ 未知:
+    - 书名：百面机器学习
+    - 笔记：见[百面机器学习](pylab/books/百面机器学习)
 
 ### 论文
 
  - Character-level Convolutional Networks for Text Classification: [阅读笔记](./pylab/papers/character_level_convolutional_networks_for_text_classiﬁcation)
-
+    - 论文实现：[char_cnn_text_classification](https://github.com/howie6879/char_cnn_text_classification)
 ### 课程
 
 > 课程学习心得代码
