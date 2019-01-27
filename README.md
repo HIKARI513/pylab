@@ -80,7 +80,4 @@
 
 > 好的文章以及文档翻译
 
-- [TensorFlow-Example](https://github.com/aymericdamien/TensorFlow-Examples):
-    - [TensorFlow-Examples翻译版](./pylab/tutorial/TensorFlow-Examples)
-
 - 文章翻译目录: 见[Articles On Translation](./articles_translation.md)
