@@ -57,6 +57,10 @@
     - 书名：百面机器学习
     - 笔记：见[百面机器学习](pylab/books/百面机器学习)
 
+- 2019-03 ~ 2019-05
+    - 书名：敏捷软件开发：原则、模式与实践
+    - 笔记：见[敏捷软件开发](pylab/books/敏捷软件开发)
+
 ### 论文
 
  - Character-level Convolutional Networks for Text Classification: [阅读笔记](./pylab/papers/character_level_convolutional_networks_for_text_classiﬁcation)
