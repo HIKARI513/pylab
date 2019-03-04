@@ -3,5 +3,7 @@
         "activityBar.background": "#1A3316",
         "titleBar.activeBackground": "#25471E",
         "titleBar.activeForeground": "#F7FBF7"
-    }
+    },
+    "python.pythonPath": "/Users/howie/.local/share/virtualenvs/pylab--bL9aVUt/bin/python",
+    "python.formatting.provider": "yapf"
 }
