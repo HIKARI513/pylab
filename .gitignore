@@ -110,3 +110,4 @@ runs/
 pylab/papers/character_level_convolutional_networks_for_text_classiﬁcation/test.vec
 pylab/books/deep_learning_with_python/deep-learning-with-python-notebooks-master
 *.h5
+.vscode
