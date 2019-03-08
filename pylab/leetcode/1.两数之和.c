@@ -27,7 +27,24 @@
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
-int* twoSum(int* nums, int numsSize, int target) {
-    
-}
+int *twoSum(int *nums, int numsSize, int target)
+{
+    int second_value, i, j;
+    static int index[2];
 
+    for (i = 0; i < numsSize - 1; i++)
+    {
+        second_value = target - nums[i];
+
+        for (j = 0; j < numsSize; j++)
+        {
+            if (second_value == nums[j] && i != j)
+            {
+                index[0] = i;
+                index[1] = j;
+                return index;
+            }
+        }
+    }
+    return 0;
+}
