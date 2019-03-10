@@ -6,6 +6,8 @@ verify_ssl = true
 [dev-packages]
 pylint = "*"
 yapf = "*"
+pytest = "*"
+autopep8 = "*"
 
 [packages]
 numpy = "*"
