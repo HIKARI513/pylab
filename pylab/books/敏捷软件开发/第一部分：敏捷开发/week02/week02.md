@@ -18,7 +18,7 @@
 
 #### 代码
 
-一次关于TDD结队编程的实践，代码使用Python实现，具体见[bowling.py](.code/bowling.py)
+一次关于TDD结队编程的实践，代码使用Python实现，具体见[bowling.py](https://github.com/howie6879/pylab/blob/master/pylab/books/%E6%95%8F%E6%8D%B7%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%EF%BC%9A%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/week02/code/bowling.py)
 
 #### 感想
 
