@@ -5,6 +5,12 @@
 
 * [Python 读书学习实验室](#python-读书学习实验室)
 	* [书籍](#书籍)
+		* [统计学习方法](#统计学习方法)
+		* [Neural Networks and Deep Learning](#neural-networks-and-deep-learning)
+		* [hands_on_Ml_with_Sklearn_and_TF](#hands_on_ml_with_sklearn_and_tf)
+		* [Deep Learning with Python](#deep-learning-with-python)
+		* [百面机器学习](#百面机器学习)
+		* [敏捷软件开发](#敏捷软件开发)
 	* [论文](#论文)
 	* [课程](#课程)
 	* [文档](#文档)
@@ -27,39 +33,43 @@
 
 > 书籍阅读留存
 
-- 2018-09 ~ 未知:
-    - 书名：统计学习方法
+#### 统计学习方法
+
+ - 统计学习方法
     - 实验代码: 见 [pylab/books/statistical_learning_method](pylab/books/statistical_learning_method)
     - 笔记记录：
         - 第一章：[统计学习方法概论](https://www.howie6879.cn/post/37/)
         - 第二章：[感知机](https://www.howie6879.cn/post/38/)
         - 第三章：[k近邻法](https://www.howie6879.cn/post/39/)
 
-- 2018-12 ~ 未知：
-    - 书名：[Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
+#### Neural Networks and Deep Learning
+
+- [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
     - 中文版：[Neural Networks and Deep Learning](https://github.com/zhanggyb/nndl)
     - 实验代码: 见 [pylab/nndl](pylab/books/nndl)
     - 官方：见 [nndl](https://github.com/mnielsen/neural-networks-and-deep-learning)
     - 笔记记录：
         - 第一章：[神经网络与深度学习笔记 - 1.识别手写字](https://www.howie6879.cn/post/33/)
 
-- 2018-12-10 ~ 未知:
-    - 书名: [hands_on_Ml_with_Sklearn_and_TF](https://github.com/apachecn/hands_on_Ml_with_Sklearn_and_TF)
+#### hands_on_Ml_with_Sklearn_and_TF
+
+- [hands_on_Ml_with_Sklearn_and_TF](https://github.com/apachecn/hands_on_Ml_with_Sklearn_and_TF)
     - 实验代码: 见 [pylab/hands_on_ml_with_sklearn_and_tf](pylab/books/hands_on_ml_with_sklearn_and_tf)
     - 官方：[源码仓库](https://github.com/ageron/handson-ml)
     - 第三方笔记：[Hands-on-Machine-Learning](https://github.com/DeqianBai/Hands-on-Machine-Learning)
 
-- 2019-01 ~ 未知:
-    - 书名: Deep Learning with Python
+#### Deep Learning with Python
+
+- Deep Learning with Python
     - 实验代码: 见 [pylab/books/deep_learning_with_python](pylab/books/deep_learning_with_python)
 
-- 2019-01 ~ 未知:
-    - 书名：百面机器学习
-    - 笔记：见[百面机器学习](pylab/books/百面机器学习)
+#### 百面机器学习
 
-- 2019-03 ~ 2019-05
-    - 书名：敏捷软件开发：原则、模式与实践
-    - 笔记：见[敏捷软件开发](pylab/books/敏捷软件开发)
+- [百面机器学习](pylab/books/百面机器学习)
+
+#### 敏捷软件开发
+
+- [敏捷软件开发](pylab/books/敏捷软件开发)
 
 ### 论文
 
