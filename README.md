@@ -12,6 +12,7 @@
 		* [百面机器学习](#百面机器学习)
 		* [敏捷软件开发](#敏捷软件开发)
 		* [漫画线性代数](#漫画线性代数)
+		* [漫画统计学](#漫画统计学)
 	* [论文](#论文)
 	* [课程](#课程)
 	* [文档](#文档)
@@ -76,10 +77,15 @@
 
 - [漫画线性代数](pylab/books/漫画线性代数)
 
+#### 漫画统计学
+
+- [漫画统计学](pylab/books/漫画统计学)
+
 ### 论文
 
  - Character-level Convolutional Networks for Text Classification: [阅读笔记](./pylab/papers/character_level_convolutional_networks_for_text_classiﬁcation)
     - 论文实现：[char_cnn_text_classification](https://github.com/howie6879/char_cnn_text_classification)
+
 ### 课程
 
 > 课程学习心得代码
