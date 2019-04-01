@@ -9,17 +9,17 @@
 		* [Neural Networks and Deep Learning](#neural-networks-and-deep-learning)
 		* [hands_on_Ml_with_Sklearn_and_TF](#hands_on_ml_with_sklearn_and_tf)
 		* [Deep Learning with Python](#deep-learning-with-python)
-		* [百面机器学习](#百面机器学习)
 		* [敏捷软件开发](#敏捷软件开发)
 		* [漫画线性代数](#漫画线性代数)
+		* [读统计思维—程序员数学之概率统计](#读统计思维程序员数学之概率统计)
 		* [漫画统计学](#漫画统计学)
+		* [百面机器学习](#百面机器学习)
 	* [论文](#论文)
 	* [课程](#课程)
 	* [文档](#文档)
 	* [翻译](#翻译)
 
 <!-- /code_chunk_output -->
-
 
 ## Python 读书学习实验室
 
@@ -37,49 +37,58 @@
 
 #### 统计学习方法
 
- - 统计学习方法
-    - 实验代码: 见 [pylab/books/statistical_learning_method](pylab/books/statistical_learning_method)
-    - 笔记记录：
-        - 第一章：[统计学习方法概论](https://www.howie6879.cn/post/37/)
-        - 第二章：[感知机](https://www.howie6879.cn/post/38/)
-        - 第三章：[k近邻法](https://www.howie6879.cn/post/39/)
+- 实验代码: 见 [pylab/books/statistical_learning_method](pylab/books/statistical_learning_method)
+- 笔记记录：
+    - 第一章：[统计学习方法概论](https://www.howie6879.cn/post/37/)
+    - 第二章：[感知机](https://www.howie6879.cn/post/38/)
+    - 第三章：[k近邻法](https://www.howie6879.cn/post/39/)
 
 #### Neural Networks and Deep Learning
 
-- [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
-    - 中文版：[Neural Networks and Deep Learning](https://github.com/zhanggyb/nndl)
-    - 实验代码: 见 [pylab/nndl](pylab/books/nndl)
-    - 官方：见 [nndl](https://github.com/mnielsen/neural-networks-and-deep-learning)
-    - 笔记记录：
-        - 第一章：[神经网络与深度学习笔记 - 1.识别手写字](https://www.howie6879.cn/post/33/)
+- 英文版：[Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
+- 中文版：[Neural Networks and Deep Learning](https://github.com/zhanggyb/nndl)
+- 实验代码: 见 [pylab/nndl](pylab/books/nndl)
+- 官方代码：见 [nndl](https://github.com/mnielsen/neural-networks-and-deep-learning)
+- 笔记记录：
+    - 第一章：[神经网络与深度学习笔记 - 1.识别手写字](https://www.howie6879.cn/post/33/)
 
 #### hands_on_Ml_with_Sklearn_and_TF
 
 - [hands_on_Ml_with_Sklearn_and_TF](https://github.com/apachecn/hands_on_Ml_with_Sklearn_and_TF)
-    - 实验代码: 见 [pylab/hands_on_ml_with_sklearn_and_tf](pylab/books/hands_on_ml_with_sklearn_and_tf)
-    - 官方：[源码仓库](https://github.com/ageron/handson-ml)
-    - 第三方笔记：[Hands-on-Machine-Learning](https://github.com/DeqianBai/Hands-on-Machine-Learning)
+- 实验代码: 见 [pylab/hands_on_ml_with_sklearn_and_tf](pylab/books/hands_on_ml_with_sklearn_and_tf)
+- 官方：[源码仓库](https://github.com/ageron/handson-ml)
+- 第三方笔记：[Hands-on-Machine-Learning](https://github.com/DeqianBai/Hands-on-Machine-Learning)
 
 #### Deep Learning with Python
 
-- Deep Learning with Python
-    - 实验代码: 见 [pylab/books/deep_learning_with_python](pylab/books/deep_learning_with_python)
+- 实验代码: 见 [pylab/books/deep_learning_with_python](pylab/books/deep_learning_with_python)
 
-#### 百面机器学习
 
-- [百面机器学习](pylab/books/百面机器学习)
 
 #### 敏捷软件开发
 
-- [敏捷软件开发](pylab/books/敏捷软件开发)
+- 地址：[敏捷软件开发](pylab/books/敏捷软件开发)
+- 笔记：[敏捷软件开发](https://github.com/howie6879/pylab/tree/master/pylab/books/%E6%95%8F%E6%8D%B7%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91)
 
 #### 漫画线性代数
 
-- [漫画线性代数](pylab/books/漫画线性代数)
+- 思维导图：[漫画线性代数](pylab/books/漫画线性代数)：
+- 记录：[漫画线性代数](https://github.com/howie6879/pylab/issues/3)
+
+#### 读统计思维—程序员数学之概率统计 
+
+- 思维导图：[漫画统计学](pylab/books/读统计思维——程序员数学之概率统计)
+- 记录：[漫画统计学](https://github.com/howie6879/pylab/issues/5)
 
 #### 漫画统计学
 
-- [漫画统计学](pylab/books/漫画统计学)
+- 思维导图：[漫画统计学](pylab/books/漫画统计学)
+- 记录：[漫画统计学](https://github.com/howie6879/pylab/issues/6)
+
+#### 百面机器学习
+
+- 思维导图：[百面机器学习](pylab/books/百面机器学习)
+- 笔记：[百面机器学习](https://github.com/howie6879/pylab/issues/9)
 
 ### 论文
 
@@ -88,11 +97,15 @@
 
 ### 课程
 
-> 课程学习心得代码
+> 课程学习
 
 - [专为程序员设计的线性代数课程](https://coding.imooc.com/class/260.html)：bobo老师的课程
-    - 代码目录：[play_linear_algebra](./pylab/play_linear_algebra)
+    - 代码目录：[play_linear_algebra](./pylab/lessons/play_linear_algebra)
     - 官方代码：[Play-with-Linear-Algebra](https://github.com/liuyubobobo/Play-with-Linear-Algebra)
+
+- 极客时间：数据结构与算法之美
+    - 笔记点[这里](pylab/lessons/data_structure_and_algorithms)
+    - 具体笔记汇总点[这里](https://github.com/howie6879/pylab/issues/7)
 
 ### 文档
 
