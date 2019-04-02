@@ -63,8 +63,6 @@
 
 - 实验代码: 见 [pylab/books/deep_learning_with_python](pylab/books/deep_learning_with_python)
 
-
-
 #### 敏捷软件开发
 
 - 地址：[敏捷软件开发](pylab/books/敏捷软件开发)
@@ -104,6 +102,7 @@
     - 官方代码：[Play-with-Linear-Algebra](https://github.com/liuyubobobo/Play-with-Linear-Algebra)
 
 - 极客时间：数据结构与算法之美
+	- 官方代码仓库：[algo](https://github.com/wangzheng0822/algo)
     - 笔记点[这里](pylab/lessons/data_structure_and_algorithms)
     - 具体笔记汇总点[这里](https://github.com/howie6879/pylab/issues/7)
 
