@@ -25,17 +25,19 @@
 
 > 书籍阅读留存
 
-- [ ] [统计学习方法](pylab/books/statistical_learning_method): #10
-- [ ] [Neural Networks and Deep Learning](pylab/books/nndl)
-- [x] [hands_on_Ml_with_Sklearn_and_TF](pylab/books/hands_on_ml_with_sklearn_and_tf)
-- [x] [Deep Learning with Python](pylab/books/deep_learning_with_python)
-- [x] [敏捷软件开发](pylab/books/敏捷软件开发)
-- [x] [漫画线性代数](pylab/books/漫画线性代数)
-- [ ] [读统计思维：程序员数学之概率统计 ](pylab/books/读统计思维——程序员数学之概率统计)
-- [ ] [漫画统计学](pylab/books/漫画统计学)
-- [ ] [百面机器学习](pylab/books/百面机器学习)
-- [x] 深度学习入门：基于Python的理论与实现
-- [ ] [Python机器学习经典实例](pylab/books/Python机器学习经典实例)
+- [x] [Deep Learning with Python](pylab/books/deep_learning_with_python): [#1](https://github.com/howie6879/pylab/issues/1)
+- [x] [敏捷软件开发](pylab/books/敏捷软件开发): [#2](https://github.com/howie6879/pylab/issues/2)
+- [x] [漫画线性代数](pylab/books/漫画线性代数): [#3](https://github.com/howie6879/pylab/issues/3)
+- [x] 深度学习入门：基于Python的理论与实现: [#4](https://github.com/howie6879/pylab/issues/4)
+- [ ] [读统计思维：程序员数学之概率统计 ](pylab/books/读统计思维——程序员数学之概率统计): [#5](https://github.com/howie6879/pylab/issues/5)
+- [ ] [漫画统计学](pylab/books/漫画统计学): [#6](https://github.com/howie6879/pylab/issues/6)
+- [ ] [百面机器学习](pylab/books/百面机器学习): [#9](https://github.com/howie6879/pylab/issues/9)
+- [ ] [统计学习方法](pylab/books/statistical_learning_method): [#10](https://github.com/howie6879/pylab/issues/10)
+- [ ] [Neural Networks and Deep Learning](pylab/books/nndl): [#11](https://github.com/howie6879/pylab/issues/11)
+- [ ] Grokking Deep Learning: [#12](https://github.com/howie6879/pylab/issues/12)
+- [ ] [数据结构与算法：Python语言描述](pylab/books/算法与数据结构：Python语言描述)：[#13](https://github.com/howie6879/pylab/issues/13)
+- [x] [hands_on_Ml_with_Sklearn_and_TF](pylab/books/hands_on_ml_with_sklearn_and_tf): [#14](https://github.com/howie6879/pylab/issues/14)
+- [ ] [Python机器学习经典实例](pylab/books/Python机器学习经典实例): [#15](https://github.com/howie6879/pylab/issues/15)
 
 ### 论文
 
