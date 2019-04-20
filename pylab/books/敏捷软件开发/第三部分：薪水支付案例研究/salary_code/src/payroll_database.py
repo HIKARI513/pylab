@@ -8,9 +8,16 @@ class PayrollDatabase:
     employees = {}
 
     @classmethod
-    def add_employee(cls, emp_id, employee):
+    def add_employee(cls, emp_id: int, employee: str):
         cls.employees[emp_id] = employee
 
     @classmethod
-    def get_employee(cls, emp_id):
-        return cls.employees[emp_id]
+    def delete_employee(cls, emp_id: int):
+        cls.employees.pop(emp_id)
+
+    @classmethod
+    def get_employee(cls, emp_id: int):
+        try:
+            return cls.employees[emp_id]
+        except:
+            return None

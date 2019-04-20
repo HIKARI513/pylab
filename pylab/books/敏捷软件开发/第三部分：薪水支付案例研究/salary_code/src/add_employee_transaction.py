@@ -10,13 +10,9 @@ from src.transaction import Transaction
 
 
 class AddEmployeeTransaction(Transaction):
-    def __init__(self):
-        self._emp_id, self._name, self._address = None, None, None
-
-    def add_employee_transaction(self, emp_id, name, address):
-        self._emp_id = emp_id
-        self._name = name
-        self._address = address
+    def __init__(self, emp_id: int, name: str, address: str):
+        self._emp_id, self._name, self._address = emp_id, name, address
+        self.classification, self.schedule, self.method = None, None, None
 
     def make_classification(self):
         pass
@@ -33,4 +29,4 @@ class AddEmployeeTransaction(Transaction):
 
 
 if __name__ == "__main__":
-    t = AddEmployeeTransaction()
+    t = AddEmployeeTransaction(1, '2', '3')

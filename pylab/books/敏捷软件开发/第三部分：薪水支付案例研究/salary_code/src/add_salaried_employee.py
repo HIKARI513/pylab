@@ -9,8 +9,8 @@ from src.salaried_classification import SalariedClassification
 
 class AddSalariedEmployee(AddEmployeeTransaction):
 
-    def add_salaried_employee(self, emp_id, name, address, salary):
-        super().add_employee_transaction(emp_id, name, address)
+    def __init__(self, emp_id: int, name: str, address: str, salary: float):
+        super().__init__(emp_id, name, address)
         self.salary = salary
 
     def make_classification(self):

@@ -9,8 +9,9 @@ from src.weekly_schedule import WeeklySchedule
 
 
 class AddHourlyEmployee(AddEmployeeTransaction):
-    def add_hourly_employee(self, emp_id, name, address, hour_salary):
-        super().add_employee_transaction(emp_id, name, address)
+
+    def __init__(self, emp_id: int, name: str, address: str, hour_salary: float):
+        super().__init__(emp_id, name, address)
         self.hour_salary = hour_salary
 
     def make_classification(self):

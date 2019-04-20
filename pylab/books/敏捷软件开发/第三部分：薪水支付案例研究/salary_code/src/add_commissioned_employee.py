@@ -8,8 +8,9 @@ from src.bl_weekly_schedule import BlweeklySchedule
 
 
 class AddCommissionedEmployee(AddEmployeeTransaction):
-    def add_commissioned_employee(self, emp_id, name, address, salary, commissioned_rate):
-        super().add_employee_transaction(emp_id, name, address)
+
+    def __init__(self, emp_id: int, name: str, address: str, salary: float, commissioned_rate: float):
+        super().__init__(emp_id, name, address)
         self.salary = salary
         self.commissioned_rate = commissioned_rate
 
