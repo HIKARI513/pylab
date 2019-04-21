@@ -29,6 +29,15 @@ def test_add_salaried_employee():
     assert isinstance(pm, HoldMethod) == True
 
 
+def test_add_service_charge():
+    emp_id = 2
+    t = AddHourlyEmployee(emp_id, "Bill", "Home", 15.25)
+    t.execute()
+    e = PayrollDatabase.get_employee(emp_id)
+
+    assert e.name == "Bob"
+
+
 def test_delete_employee_transaction():
     emp_id = 4
     t = AddCommissionedEmployee(emp_id, "Bill", "Home", 2500, 3.2)
