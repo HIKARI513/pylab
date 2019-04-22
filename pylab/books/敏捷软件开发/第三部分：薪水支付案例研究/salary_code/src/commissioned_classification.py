@@ -2,7 +2,7 @@
 """
  Created by howie.hu at 2019/4/19.
 """
-
+from src.paycheck import Paycheck
 from src.payment_classification import PaymentClassification
 
 
@@ -18,5 +18,5 @@ class CommissionedClassification(PaymentClassification):
     def get_sales_receipt(self, day):
         pass
 
-    def calculate_pay(self, pay_check):
-        return self.salary
+    def calculate_pay(self, paycheck: Paycheck):
+        return 0

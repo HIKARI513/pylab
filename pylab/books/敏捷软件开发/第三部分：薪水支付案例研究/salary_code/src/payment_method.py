@@ -6,6 +6,6 @@
 from src.paycheck import Paycheck
 
 
-class PaymentClassification:
-    def calculate_pay(self, paycheck: Paycheck):
+class PaymentMethod:
+    def pay(self, paycheck: Paycheck):
         raise NotImplementedError

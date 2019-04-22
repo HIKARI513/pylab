@@ -23,3 +23,6 @@ if __name__ == '__main__':
     print(datetime.date.today())
 
     print(datetime.date(2017, 3, 22))
+    print(datetime.date(2019, 4, 22).month)
+
+    print(datetime.date.today() - datetime.timedelta(days=1))

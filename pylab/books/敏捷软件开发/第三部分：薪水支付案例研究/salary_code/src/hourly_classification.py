@@ -5,10 +5,12 @@
 import datetime
 import typing
 
+from src.paycheck import Paycheck
+from src.payment_classification import PaymentClassification
 from src.time_card import TimeCard
 
 
-class HourlyClassification:
+class HourlyClassification(PaymentClassification):
     FRIDAY = 5
     WORK_HOUR_OF_DAY = 8.0
     MORE_PAY_RATE = 1.5
@@ -25,3 +27,11 @@ class HourlyClassification:
             if time_card.get_date() == date:
                 return time_card
         return None
+
+    def calculate_pay(self, paycheck: Paycheck):
+        pay = 0.0
+        for time_card in self.time_cards:
+            pass
+
+    def is_in_pay_periods(self, time_card: TimeCard, pay_day: datetime.date):
+        start_day = pay_day + datetime.timedelta(days=-5)

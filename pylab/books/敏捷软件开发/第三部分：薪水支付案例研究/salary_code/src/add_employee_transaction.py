@@ -11,8 +11,7 @@ from src.transaction import Transaction
 
 class AddEmployeeTransaction(Transaction):
     def __init__(self, emp_id: int, name: str, address: str):
-        self._emp_id, self._name, self._address = emp_id, name, address
-        self.classification, self.schedule, self.method = None, None, None
+        self.emp_id, self.name, self.address = emp_id, name, address
 
     def make_classification(self):
         pass
@@ -21,11 +20,11 @@ class AddEmployeeTransaction(Transaction):
         pass
 
     def execute(self):
-        e = Employee(self._emp_id, self._name, self._address)
+        e = Employee(self.emp_id, self.name, self.address)
         e.classification = self.make_classification()
         e.schedule = self.make_schedule()
         e.method = HoldMethod()
-        PayrollDatabase.add_employee(self._emp_id, e)
+        PayrollDatabase.add_employee(self.emp_id, e)
 
 
 if __name__ == "__main__":
