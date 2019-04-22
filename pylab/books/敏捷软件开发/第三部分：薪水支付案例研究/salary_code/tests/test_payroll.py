@@ -22,6 +22,7 @@ from src.weekly_schedule import WeeklySchedule
 
 def test_add_salaried_employee():
     emp_id = 1
+
     t = AddSalariedEmployee(emp_id, "Bob", "Home", 1000.00)
     t.execute()
     e = PayrollDatabase.get_employee(emp_id)
@@ -82,11 +83,11 @@ def test_change_hourly_transaction():
     cht = ChangeHourlyTransaction(emp_id, 27.52)
     cht.execute()
 
-    e: AddCommissionedEmployee = None
     e = PayrollDatabase.get_employee(emp_id)
     assert e.name == "Lance"
 
-    hc = pc = e.classification
+    pc = e.classification
+    hc: HourlyClassification = pc
     assert isinstance(pc, HourlyClassification)
     assert hc.hour_salary == 27.52
 
@@ -165,3 +166,208 @@ def test_time_card_transaction():
 
     tc = pc.get_time_card(datetime.date(2005, 7, 31))
     assert tc.get_hours() == 8.0
+
+
+def validate_hourly_paycheck(pt: PaydayTransaction, emp_id: int, pay_date: datetime.date, pay: float):
+    pc: Paycheck = pt.get_paycheck(emp_id)
+    assert pc is not None
+    assert pay_date == pc.pay_date
+    assert pay == pc.gross_pay
+    assert "Hold" == pc.disposition
+    assert 0.0 == pc.deductions
+    assert pay == pc.net_pay
+
+
+def test_pay_single_hourly_employee_no_time_card():
+    emp_id = 2
+    t = AddHourlyEmployee(emp_id, "Bill", "Home", 15.25)
+    t.execute()
+
+    pay_date = datetime.date(2001, 11, 9)
+    pt = PaydayTransaction(pay_date)
+    pt.execute()
+
+    validate_hourly_paycheck(pt, emp_id, pay_date, 0.0)
+
+
+def test_pay_single_hourly_employee_one_time_card():
+    emp_id = 2
+    t = AddHourlyEmployee(emp_id, "Bill", "Home", 15.25)
+    t.execute()
+
+    # Friday
+    pay_date = datetime.date(2001, 11, 9)
+    tc = TimeCardTransaction(pay_date, 2.0, emp_id)
+    tc.execute()
+
+    pt = PaydayTransaction(pay_date)
+    pt.execute()
+
+    validate_hourly_paycheck(pt, emp_id, pay_date, 30.5)
+
+
+def test_pay_single_hourly_employee_overtime_one_time_card():
+    emp_id = 2
+    t = AddHourlyEmployee(emp_id, "Bill", "Home", 15.25)
+    t.execute()
+
+    # Friday
+    pay_date = datetime.date(2001, 11, 9)
+    tc = TimeCardTransaction(pay_date, 9.0, emp_id)
+    tc.execute()
+
+    pt = PaydayTransaction(pay_date)
+    pt.execute()
+
+    validate_hourly_paycheck(pt, emp_id, pay_date, (8 + 1 * 1.5) * 15.25)
+
+
+def test_pay_single_hourly_employee_on_wrong_date():
+    emp_id = 2
+    t = AddHourlyEmployee(emp_id, "Bill", "Home", 15.25)
+    t.execute()
+
+    # Thursday
+    pay_date = datetime.date(2001, 11, 8)
+    tc = TimeCardTransaction(pay_date, 9.0, emp_id)
+    tc.execute()
+
+    pt = PaydayTransaction(pay_date)
+    pt.execute()
+
+    pc = pt.get_paycheck(emp_id)
+    assert pc is None
+
+
+def test_pay_single_hourly_employee_two_time_cards():
+    emp_id = 2
+    t = AddHourlyEmployee(emp_id, "Bill", "Home", 15.25)
+    t.execute()
+
+    # Friday
+    pay_date = datetime.date(2001, 11, 9)
+    tc = TimeCardTransaction(pay_date, 2.0, emp_id)
+    tc.execute()
+
+    tc2 = TimeCardTransaction(pay_date + datetime.timedelta(days=-1), 5.0, emp_id)
+    tc2.execute()
+
+    pt = PaydayTransaction(pay_date)
+    pt.execute()
+
+    validate_hourly_paycheck(pt, emp_id, pay_date, 7 * 15.25)
+
+
+def test_pay_single_hourly_employee_with_time_cards_spanning_two_pay_periods():
+    emp_id = 2
+    t = AddHourlyEmployee(emp_id, "Bill", "Home", 15.25)
+    t.execute()
+
+    # Friday
+    pay_date = datetime.date(2001, 11, 9)
+    date_in_previous_pay_period = datetime.date(2001, 11, 2)
+
+    tc = TimeCardTransaction(pay_date, 2.0, emp_id)
+    tc.execute()
+
+    tc2 = TimeCardTransaction(date_in_previous_pay_period, 5.0, emp_id)
+    tc2.execute()
+
+    pt = PaydayTransaction(pay_date)
+    pt.execute()
+
+    validate_hourly_paycheck(pt, emp_id, pay_date, 2 * 15.25)
+
+
+def test_salaried_union_member_dues():
+    emp_id = 1
+    member_id = 7734
+
+    t = AddSalariedEmployee(emp_id, "Bob", "Home", 1000.00)
+    t.execute()
+
+    cmt = ChangeMemberTransaction(emp_id, member_id, 9.42)
+    cmt.execute()
+
+    pay_date = datetime.date(2001, 11, 30)
+
+    pt = PaydayTransaction(pay_date)
+    pt.execute()
+
+    pc: Paycheck = pt.get_paycheck(emp_id)
+
+    assert pc is not None
+    assert pay_date == pc.pay_date
+    assert 1000.0 == pc.gross_pay
+    assert "Hold" == pc.disposition
+    assert 9.42 * 5 == pc.deductions
+    assert 1000.0 - (9.42 * 5) == pc.net_pay
+
+
+def test_hourly_union_member_service_charge():
+    emp_id = 1
+    member_id = 7734
+
+    t = AddHourlyEmployee(emp_id, "Bill", "Home", 15.24)
+    t.execute()
+
+    cmt = ChangeMemberTransaction(emp_id, member_id, 9.42)
+    cmt.execute()
+
+    pay_date = datetime.date(2001, 11, 9)
+    tc = TimeCardTransaction(pay_date, 8.0, emp_id)
+    tc.execute()
+
+    sct = ServiceChargeTransaction(member_id, pay_date, 19.42)
+    sct.execute()
+
+    pt = PaydayTransaction(pay_date)
+    pt.execute()
+
+    pc: Paycheck = pt.get_paycheck(emp_id)
+
+    assert pc is not None
+    assert pay_date == pc.pay_date
+    assert 8 * 15.24 == pc.gross_pay
+    assert "Hold" == pc.disposition
+    assert 9.42 + 19.42 == pc.deductions
+    assert ((8 * 15.24) - (9.42 + 19.42)) == pc.net_pay
+
+
+def test_service_Charges_spanning_multiple_pay_periods():
+    emp_id = 1
+    member_id = 7734
+
+    t = AddHourlyEmployee(emp_id, "Bill", "Home", 15.24)
+    t.execute()
+
+    cmt = ChangeMemberTransaction(emp_id, member_id, 9.42)
+    cmt.execute()
+
+    pay_date = datetime.date(2001, 11, 9)
+    early_date = datetime.date(2001, 11, 2)
+    late_date = datetime.date(2001, 11, 16)
+
+    sct = ServiceChargeTransaction(member_id, pay_date, 19.42)
+    sct.execute()
+
+    sct_early = ServiceChargeTransaction(member_id, early_date, 19.42)
+    sct_early.execute()
+
+    sct_late = ServiceChargeTransaction(member_id, late_date, 19.42)
+    sct_late.execute()
+
+    tct = TimeCardTransaction(pay_date, 8.0, emp_id)
+    tct.execute()
+
+    pt = PaydayTransaction(pay_date)
+    pt.execute()
+
+    pc: Paycheck = pt.get_paycheck(emp_id)
+
+    assert pc is not None
+    assert pay_date == pc.pay_date
+    assert 8 * 15.24 == pc.gross_pay
+    assert "Hold" == pc.disposition
+    assert 9.42 + 19.42 == pc.deductions
+    assert ((8 * 15.24) - (9.42 + 19.42)) == pc.net_pay

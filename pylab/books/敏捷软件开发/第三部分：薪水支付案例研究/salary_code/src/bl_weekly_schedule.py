@@ -15,4 +15,4 @@ class BlweeklySchedule(PaymentSchedule):
         return date.weekday() == self.value - 1
 
     def get_pay_period_start_date(self, pay_date: datetime.date):
-        pass
+        return pay_date + datetime.timedelta(days=-11)
