@@ -24,6 +24,14 @@ class SinglyLinkedList:
         """初始化单链表"""
         self._head = None
 
+    def find_by_index(self, index: int) -> Optional[Node]:
+        p = self._head
+        position = 0
+        while p and position != index:
+            p = p.next
+            position += 1
+        return p
+
     def find_by_value(self, value: int) -> Optional[Node]:
         """
         根据值查找相应的节点
@@ -62,10 +70,11 @@ class SinglyLinkedList:
         :return:
         """
         new_node = Node(value)
+        self.insert_node_before(node, new_node)
 
     def insert_node_before(self, node: Node, new_node: Node):
         """
-        新节点替代当前节点的位置，然后将新节点的后继指针指向当前节点
+        新节点替代当前节点的位置，然后将新节点的后继指针指向当前节点，当前节点作为新节点的后继元素
         :param node: 当前节点
         :param new_node: 新节点
         :return:
@@ -80,6 +89,59 @@ class SinglyLinkedList:
         current = self._head
         while current.next and current.next != node:
             current = current.next
+
+        if not current.next:
+            return
+
+        current.next = new_node
+        new_node.next = node
+
+    def delete_by_node(self, node: Node):
+        """
+        删除链表中的某个节点
+        :param node:
+        :return:
+        """
+        if not self._head or not node:
+            return
+
+        if node.next:
+            node.data = node.next.data
+            node.next = node.next.next
+            return
+
+        # 如果node是尾结点或者不在列表
+        current = self._head
+        while current and current.next != node:
+            current = current.next
+        if not current:
+            return
+        current.next = node.next
+
+    def delete_by_value(self, value: int):
+        """
+        根据值删除某一节点
+        :param value:
+        :return:
+        """
+        if not self._head or not value:
+            return
+
+        fake_head = Node(value + 1)
+        fake_head.next = self._head
+        prev, current = fake_head, self._head
+
+        while current:
+            if current.data != value:
+                # 修改此时prev节点的后继指针指向当前节点
+                prev.next = current
+                # prev节点的后继指针指向的节点重新赋值给prev节点
+                prev = prev.next
+            current = current.next
+        if prev.next:
+            # 防止prev节点与None之间有删除的节点
+            prev.next = None
+        self._head = fake_head.next
 
     def print_all(self):
         current: Union[Node, None] = self._head
@@ -111,4 +173,17 @@ if __name__ == "__main__":
         l.insert_value_to_head(i)
     print(l)
     node9 = l.find_by_value(9)
-    print(node9)
+    l.insert_value_before(node9, 20)
+    print(l)
+    l.insert_value_before(node9, 16)
+    print(l)
+    l.insert_value_before(node9, 16)
+    print(l)
+    l.delete_by_value(16)
+    print(l)
+    node11 = l.find_by_index(3)
+    print(node11.data, node11.next.data)
+    l.delete_by_node(node11)
+    print(l)
+    l.delete_by_node(l._head)
+    print(l)
