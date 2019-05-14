@@ -19,6 +19,7 @@ pandas = "*"
 scikit-learn = "*"
 jupyterlab = "*"
 keras = "*"
+mxnet = "*"
 
 [requires]
 python_version = "3.6"
