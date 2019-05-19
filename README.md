@@ -40,6 +40,7 @@
 - [ ] [Python机器学习经典实例](pylab/books/Python机器学习经典实例): [#15](https://github.com/howie6879/pylab/issues/15)
 - [ ] [Spark机器学习-第二版](Spark机器学习-第二版))：[#16](https://github.com/howie6879/pylab/issues/16)
 - [ ] [深度卷积网络原理与实践](pylab/books/深度卷积网络原理与实践)：[#17](https://github.com/howie6879/pylab/issues/17)
+- [ ] [计算机网络自顶向下方法](pylab/books/计算机网络自顶向下方法)：[#18](https://github.com/howie6879/pylab/issues/18)
 
 ### 论文
 
