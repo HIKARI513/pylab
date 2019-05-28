@@ -20,6 +20,7 @@ scikit-learn = "*"
 jupyterlab = "*"
 keras = "*"
 mxnet = "*"
+pyspark = "*"
 
 [requires]
 python_version = "3.6"

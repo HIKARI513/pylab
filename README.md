@@ -38,7 +38,7 @@
 - [ ] [数据结构与算法：Python语言描述](pylab/books/算法与数据结构：Python语言描述)：[#13](https://github.com/howie6879/pylab/issues/13)
 - [x] [hands_on_Ml_with_Sklearn_and_TF](pylab/books/hands_on_ml_with_sklearn_and_tf): [#14](https://github.com/howie6879/pylab/issues/14)
 - [ ] [Python机器学习经典实例](pylab/books/Python机器学习经典实例): [#15](https://github.com/howie6879/pylab/issues/15)
-- [ ] [Spark机器学习-第二版](Spark机器学习-第二版))：[#16](https://github.com/howie6879/pylab/issues/16)
+- [x] [Spark机器学习-第二版](Spark机器学习-第二版))：[#16](https://github.com/howie6879/pylab/issues/16)
 - [ ] [深度卷积网络原理与实践](pylab/books/深度卷积网络原理与实践)：[#17](https://github.com/howie6879/pylab/issues/17)
 - [ ] [计算机网络自顶向下方法](pylab/books/计算机网络自顶向下方法)：[#18](https://github.com/howie6879/pylab/issues/18)
 
