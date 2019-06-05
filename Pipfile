@@ -21,6 +21,9 @@ jupyterlab = "*"
 keras = "*"
 mxnet = "*"
 pyspark = "*"
+docker-compose = "*"
+flask = "*"
+redis = "*"
 
 [requires]
 python_version = "3.6"

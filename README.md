@@ -42,6 +42,8 @@
 - [ ] [深度卷积网络原理与实践](pylab/books/深度卷积网络原理与实践)：[#17](https://github.com/howie6879/pylab/issues/17)
 - [ ] [计算机网络自顶向下方法](pylab/books/计算机网络自顶向下方法)：[#18](https://github.com/howie6879/pylab/issues/18)
 - [x] [构建实时机器学习系统](pylab/books/构建实时机器学习系统)：[#19](https://github.com/howie6879/pylab/issues/19)
+- [x] [第一本Docker书](pylab/pylab/tutorial/docker)：[#20](https://github.com/howie6879/pylab/issues/20)
+
 
 ### 论文
 
