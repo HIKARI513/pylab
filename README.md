@@ -64,6 +64,9 @@
     - 笔记点[这里](pylab/lessons/data_structure_and_algorithms)
     - 具体笔记汇总点[这里](https://github.com/howie6879/pylab/issues/7)
 
+- CS 20: Tensorflow for Deep Learning Research
+	- 官方代码仓库：[stanford-tensorflow-tutorials](https://github.com/chiphuyen/stanford-tensorflow-tutorials)
+
 ### 文档
 
 > 框架以及库的学习汇总
