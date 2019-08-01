@@ -43,7 +43,7 @@
 - [x] [计算机网络自顶向下方法](pylab/books/计算机网络自顶向下方法)：[#18](https://github.com/howie6879/pylab/issues/18)
 - [x] [构建实时机器学习系统](pylab/books/构建实时机器学习系统)：[#19](https://github.com/howie6879/pylab/issues/19)
 - [x] [第一本Docker书](pylab/pylab/tutorial/docker)：[#20](https://github.com/howie6879/pylab/issues/20)
-- [x] [领域驱动设计精简版](pylab/books/领域驱动设计精简版)：[#20](https://github.com/howie6879/pylab/issues/21)
+- [x] [领域驱动设计精简版](pylab/books/领域驱动设计精简版)：[#21](https://github.com/howie6879/pylab/issues/21)
 
 
 ### 论文
