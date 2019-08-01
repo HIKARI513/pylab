@@ -40,10 +40,10 @@
 - [ ] [Python机器学习经典实例](pylab/books/Python机器学习经典实例): [#15](https://github.com/howie6879/pylab/issues/15)
 - [x] [Spark机器学习-第二版](Spark机器学习-第二版))：[#16](https://github.com/howie6879/pylab/issues/16)
 - [ ] [深度卷积网络原理与实践](pylab/books/深度卷积网络原理与实践)：[#17](https://github.com/howie6879/pylab/issues/17)
-- [ ] [计算机网络自顶向下方法](pylab/books/计算机网络自顶向下方法)：[#18](https://github.com/howie6879/pylab/issues/18)
+- [x] [计算机网络自顶向下方法](pylab/books/计算机网络自顶向下方法)：[#18](https://github.com/howie6879/pylab/issues/18)
 - [x] [构建实时机器学习系统](pylab/books/构建实时机器学习系统)：[#19](https://github.com/howie6879/pylab/issues/19)
 - [x] [第一本Docker书](pylab/pylab/tutorial/docker)：[#20](https://github.com/howie6879/pylab/issues/20)
-- [ ] [领域驱动设计精简版](pylab/books/领域驱动设计精简版)：[#20](https://github.com/howie6879/pylab/issues/21)
+- [x] [领域驱动设计精简版](pylab/books/领域驱动设计精简版)：[#20](https://github.com/howie6879/pylab/issues/21)
 
 
 ### 论文
