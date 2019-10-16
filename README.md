@@ -46,6 +46,18 @@
 - [x] [领域驱动设计精简版](pylab/books/领域驱动设计精简版)：[#21](https://github.com/howie6879/pylab/issues/21)
 - [x] [领域驱动设计](pylab/books/领域驱动设计)：[#22](https://github.com/howie6879/pylab/issues/22)
 
+#### 概率论与数理统计
+
+- 高等统计学
+- 统计思想综述
+- 非参数统计
+- 概率论基础
+	- [概率论与数理统计 南京大学](https://mooc.study.163.com/course/1000031001#/info)
+	- [数理统计学简史](https://book.douban.com/subject/1522839/)
+	- [概率导论](https://book.douban.com/subject/4175522/)
+	- [概率论基础教程](https://www.ituring.com.cn/book/202)
+- 高等数理统计学
+- 多元统计分析
 
 ### 论文
 

@@ -24,6 +24,7 @@ pyspark = "*"
 docker-compose = "*"
 flask = "*"
 redis = "*"
+hdfs = "*"
 
 [requires]
 python_version = "3.6"
