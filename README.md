@@ -1,17 +1,17 @@
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
+<!-- vim-markdown-toc GFM -->
 
 * [Python 读书学习实验室](#python-读书学习实验室)
 	* [书籍](#书籍)
+		* [技术书籍](#技术书籍)
+		* [概率论与数理统计](#概率论与数理统计)
 	* [论文](#论文)
 	* [课程](#课程)
 	* [文档](#文档)
 	* [翻译](#翻译)
 	* [关于](#关于)
 
-<!-- /code_chunk_output -->
+<!-- vim-markdown-toc -->
 
 ## Python 读书学习实验室
 
@@ -22,6 +22,8 @@
 - 笔记本：Jupyter Lab
 
 ### 书籍
+
+#### 技术书籍
 
 > 书籍阅读留存
 
@@ -38,16 +40,18 @@
 - [ ] [数据结构与算法：Python语言描述](pylab/books/算法与数据结构：Python语言描述)：[#13](https://github.com/howie6879/pylab/issues/13)
 - [x] [hands_on_Ml_with_Sklearn_and_TF](pylab/books/hands_on_ml_with_sklearn_and_tf): [#14](https://github.com/howie6879/pylab/issues/14)
 - [ ] [Python机器学习经典实例](pylab/books/Python机器学习经典实例): [#15](https://github.com/howie6879/pylab/issues/15)
-- [x] [Spark机器学习-第二版](Spark机器学习-第二版))：[#16](https://github.com/howie6879/pylab/issues/16)
+- [x] [Spark机器学习-第二版](Spark机器学习-第二版)：[#16](https://github.com/howie6879/pylab/issues/16)
 - [ ] [深度卷积网络原理与实践](pylab/books/深度卷积网络原理与实践)：[#17](https://github.com/howie6879/pylab/issues/17)
 - [x] [计算机网络自顶向下方法](pylab/books/计算机网络自顶向下方法)：[#18](https://github.com/howie6879/pylab/issues/18)
 - [x] [构建实时机器学习系统](pylab/books/构建实时机器学习系统)：[#19](https://github.com/howie6879/pylab/issues/19)
 - [x] [第一本Docker书](pylab/pylab/tutorial/docker)：[#20](https://github.com/howie6879/pylab/issues/20)
 - [x] [领域驱动设计精简版](pylab/books/领域驱动设计精简版)：[#21](https://github.com/howie6879/pylab/issues/21)
 - [x] [领域驱动设计](pylab/books/领域驱动设计)：[#22](https://github.com/howie6879/pylab/issues/22)
+- [x] [大数据治理](pylab/books/大数据治理)：见文件夹下面的思维导图
 
 #### 概率论与数理统计
 
+- 统计学漫话
 - 高等统计学
 - 统计思想综述
 - 非参数统计
