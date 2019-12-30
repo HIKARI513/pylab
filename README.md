@@ -47,7 +47,8 @@
 - [x] [第一本Docker书](pylab/pylab/tutorial/docker)：[#20](https://github.com/howie6879/pylab/issues/20)
 - [x] [领域驱动设计精简版](pylab/books/领域驱动设计精简版)：[#21](https://github.com/howie6879/pylab/issues/21)
 - [x] [领域驱动设计](pylab/books/领域驱动设计)：[#22](https://github.com/howie6879/pylab/issues/22)
-- [x] [大数据治理](pylab/books/大数据治理)：见文件夹下面的思维导图
+- [x] [大数据治理](pylab/books/大数据治理)：[思维导图](./pylab/books/大数据治理)
+- [ ] [Python设计模式（第二版）](pylab/books/Python设计模式（第二版）)：TODO
 
 #### 概率论与数理统计
 
