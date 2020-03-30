@@ -1,13 +1,10 @@
-
 <!-- vim-markdown-toc GFM -->
 
 * [Python 读书学习实验室](#python-读书学习实验室)
 	* [书籍](#书籍)
 		* [技术书籍](#技术书籍)
 		* [概率论与数理统计](#概率论与数理统计)
-	* [论文](#论文)
 	* [课程](#课程)
-	* [文档](#文档)
 	* [翻译](#翻译)
 	* [关于](#关于)
 
@@ -25,14 +22,13 @@
 
 #### 技术书籍
 
-> 书籍阅读留存
+> 书籍阅读留存，只留有相关笔记的
 
 - [x] [Deep Learning with Python](pylab/books/deep_learning_with_python): [#1](https://github.com/howie6879/pylab/issues/1)
 - [x] [敏捷软件开发](pylab/books/敏捷软件开发): [#2](https://github.com/howie6879/pylab/issues/2)
 - [x] [漫画线性代数](pylab/books/漫画线性代数): [#3](https://github.com/howie6879/pylab/issues/3)
 - [x] 深度学习入门：基于Python的理论与实现: [#4](https://github.com/howie6879/pylab/issues/4)
 - [ ] [读统计思维：程序员数学之概率统计 ](pylab/books/读统计思维——程序员数学之概率统计): [#5](https://github.com/howie6879/pylab/issues/5)
-- [ ] [漫画统计学](pylab/books/漫画统计学): [#6](https://github.com/howie6879/pylab/issues/6)
 - [ ] [百面机器学习](pylab/books/百面机器学习): [#9](https://github.com/howie6879/pylab/issues/9)
 - [ ] [统计学习方法](pylab/books/statistical_learning_method): [#10](https://github.com/howie6879/pylab/issues/10)
 - [ ] [Neural Networks and Deep Learning](pylab/books/nndl): [#11](https://github.com/howie6879/pylab/issues/11)
@@ -48,7 +44,9 @@
 - [x] [领域驱动设计精简版](pylab/books/领域驱动设计精简版)：[#21](https://github.com/howie6879/pylab/issues/21)
 - [x] [领域驱动设计](pylab/books/领域驱动设计)：[#22](https://github.com/howie6879/pylab/issues/22)
 - [x] [大数据治理](pylab/books/大数据治理)：[思维导图](./pylab/books/大数据治理)
-- [ ] [Python设计模式（第二版）](pylab/books/Python设计模式（第二版）)：TODO
+- [x] [精通特征工程]: [思维导图](./pylab/books/精通特征工程/精通特征工程.png)
+- [ ] [PySpark实战指南]: [思维导图](./pylab/books/PySpark实战指南/PySpark实战指南.png)
+- [ ] [Python设计模式（第二版）](./pylab/books/Python设计模式（第二版）)：TODO
 
 #### 概率论与数理统计
 
@@ -57,25 +55,25 @@
 - 统计思想综述
 - 非参数统计
 - 概率论基础
-	- [概率论与数理统计 南京大学](https://mooc.study.163.com/course/1000031001#/info)
+	- [概率论与数理统计 厦门大学](http://www.icourse163.org/course/XMU-1003699004#/info)
 	- [数理统计学简史](https://book.douban.com/subject/1522839/)
 	- [概率导论](https://book.douban.com/subject/4175522/)
 	- [概率论基础教程](https://www.ituring.com.cn/book/202)
 - 高等数理统计学
 - 多元统计分析
 
-### 论文
-
- - Character-level Convolutional Networks for Text Classification: [阅读笔记](./pylab/papers/character_level_convolutional_networks_for_text_classiﬁcation)
-    - 论文实现：[char_cnn_text_classification](https://github.com/howie6879/char_cnn_text_classification)
-
 ### 课程
 
 > 课程学习
 
 - [专为程序员设计的线性代数课程](https://coding.imooc.com/class/260.html)：bobo老师的课程
-    - 代码目录：[play_linear_algebra](./pylab/lessons/play_linear_algebra)
+    - 代码目录：[play_with_linear_algebra](./pylab/lessons/play_with_linear_algebra)
     - 官方代码：[Play-with-Linear-Algebra](https://github.com/liuyubobobo/Play-with-Linear-Algebra)
+
+- [玩转数据结构](https://coding.imooc.com/learn/list/207.html)：bobo老师的课程
+    - 代码目录：[play_with_data_structure](./pylab/lessons/play_with_data_structure)
+    - 官方代码：[Play-with-Data-Structures](https://github.com/liuyubobobo/Play-with-Data-Structures)
+	- Python实现：[Play-with-Data-Structures](https://github.com/nicemayi/play-with-data-structures)
 
 - 极客时间：
 	- 数据结构与算法之美
@@ -86,12 +84,6 @@
 
 - CS 20: Tensorflow for Deep Learning Research
 	- 官方代码仓库：[stanford-tensorflow-tutorials](https://github.com/chiphuyen/stanford-tensorflow-tutorials)
-
-### 文档
-
-> 框架以及库的学习汇总
-
-- [NumPy](https://docs.scipy.org/doc/numpy-1.15.0/user/quickstart.html): [numpy_tutorial.ipynb](./tutorial/numpy/numpy_tutirial.ipnb)
 
 ### 翻译
 
@@ -106,4 +98,4 @@
 - 博客：https://www.howie6879.cn
 - 公众号：[老胡的储物柜](https://camo.githubusercontent.com/8f6ae80175e0224eb1fb77f4ba66e857bf594cc5/68747470733a2f2f7773312e73696e61696d672e636e2f6c617267652f303037693358435567793166796a766d777a6f71326a333070303064776d7a6c2e6a7067)，扫一扫关注我~
 
-![](https://camo.githubusercontent.com/8f6ae80175e0224eb1fb77f4ba66e857bf594cc5/68747470733a2f2f7773312e73696e61696d672e636e2f6c617267652f303037693358435567793166796a766d777a6f71326a333070303064776d7a6c2e6a7067)
+<div align=center><img width="300px" height="300px" src="https://raw.githubusercontent.com/howie6879/howie6879.github.io/img/pictures/20190529083905.png" /></div>

@@ -5,19 +5,17 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
-yapf = "*"
 pytest = "*"
-autopep8 = "*"
 
 [packages]
 numpy = "*"
 tensorflow = "*"
-jupyter = "*"
+jupyter = ""
 ipython = "*"
 matplotlib = "*"
 pandas = "*"
 scikit-learn = "*"
-jupyterlab = "*"
+jupyterlab = "==1.2.5"
 keras = "*"
 mxnet = "*"
 pyspark = "*"
@@ -25,6 +23,8 @@ docker-compose = "*"
 flask = "*"
 redis = "*"
 hdfs = "*"
+black = "*"
+jupyterlab-code-formatter = "*"
 
 [requires]
 python_version = "3.6"
