@@ -28,7 +28,7 @@
 - [x] [敏捷软件开发](pylab/books/敏捷软件开发): [#2](https://github.com/howie6879/pylab/issues/2)
 - [x] [漫画线性代数](pylab/books/漫画线性代数): [#3](https://github.com/howie6879/pylab/issues/3)
 - [x] 深度学习入门：基于Python的理论与实现: [#4](https://github.com/howie6879/pylab/issues/4)
-- [ ] [读统计思维：程序员数学之概率统计 ](pylab/books/读统计思维——程序员数学之概率统计): [#5](https://github.com/howie6879/pylab/issues/5)
+- [ ] [统计思维：程序员数学之概率统计 ](pylab/books/读统计思维——程序员数学之概率统计): [#5](https://github.com/howie6879/pylab/issues/5)
 - [ ] [百面机器学习](pylab/books/百面机器学习): [#9](https://github.com/howie6879/pylab/issues/9)
 - [ ] [统计学习方法](pylab/books/statistical_learning_method): [#10](https://github.com/howie6879/pylab/issues/10)
 - [ ] [Neural Networks and Deep Learning](pylab/books/nndl): [#11](https://github.com/howie6879/pylab/issues/11)
@@ -44,8 +44,9 @@
 - [x] [领域驱动设计精简版](pylab/books/领域驱动设计精简版)：[#21](https://github.com/howie6879/pylab/issues/21)
 - [x] [领域驱动设计](pylab/books/领域驱动设计)：[#22](https://github.com/howie6879/pylab/issues/22)
 - [x] [大数据治理](pylab/books/大数据治理)：[思维导图](./pylab/books/大数据治理)
-- [x] [精通特征工程]: [思维导图](./pylab/books/精通特征工程/精通特征工程.png)
-- [ ] [PySpark实战指南]: [思维导图](./pylab/books/PySpark实战指南/PySpark实战指南.png)
+- [x] 精通特征工程: [思维导图](./pylab/books/精通特征工程/精通特征工程.png)
+- [ ] PySpark实战指南: [思维导图](./pylab/books/PySpark实战指南/PySpark实战指南.xmind)
+- [ ] 游戏数据分析的艺术: [游戏数据分析的艺术](./pylab/books/游戏数据分析的艺术/游戏数据分析的艺术.xmind)
 - [ ] [Python设计模式（第二版）](./pylab/books/Python设计模式（第二版）)：TODO
 
 #### 概率论与数理统计
